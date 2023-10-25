@@ -1,0 +1,399 @@
+.card__giratorio {
+  background-color: transparent;
+  width: 0px;
+  height: 0px;
+  perspective: 1000px;
+  position: relative;
+  left: 460px;
+  top: 150px;
+}
+
+.card__giratorio-conteudo {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card__giratorio:hover .card__giratorio-conteudo {
+  transform: rotateY(180deg);
+}
+
+.card__giratorio-conteudo--frente,
+.card__giratorio-conteudo--traseira {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  /* Safari */
+  backface-visibility: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card__giratorio-conteudo--frente {
+  background: linear-gradient(-229deg, white, white);
+}
+
+.card__giratorio-conteudo--traseira {
+  background: linear-gradient(229deg, white, white);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.card__giratorio-conteudo--traseira h1,
+.card__giratorio-conteudo--traseira p {
+  margin: 0;
+  text-shadow: 0 0 10px black;
+}
+
+.card__giratorio-conteudo--traseira h1 {
+  font-size: 1.7rem;
+}
+
+.logo {
+  width: 600px;
+  height: auto;
+  filter: drop-shadow(2px 2px 5px black);
+  opacity: 0.7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-footer {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #333;
+  padding: 70px 0;
+  margin-bottom: 50px;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #0b830b;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+.fnormal {
+  font-family: sans-serif;
+}
+
+.color-blanco {
+  color: white;
+}
+
+.color-negro {
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: white;
+  margin: 0px;
+  background-image: url("IMAGENES/dirtbg.png");
+  margin: 0;
+  padding: 0;
+}
+
+#banner {
+  height: auto;
+  width: 90%;
+  background-image: url("IMAGENES/banner minecraft 4k.png");
+  margin-left: 60px;
+  margin-bottom: 50px;
+}
+
+#bannernav {
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  width: 100%;
+  background-image: url("IMAGENES/minecraft banner 4k.webp");
+}
+
+#titulonav {
+  font-size: 100px;
+  color: black;
+  margin: 50px;
+}
+
+#logonav {
+  margin: auto;
+  width: 200px;
+  height: 75px;
+  position: absolute;
+  left: 35px;
+}
+
+#logonavindex {
+  margin: auto;
+  width: 100px;
+  height: 100px 50px;
+  position: absolute;
+  left: 35px;
+}
+
+#navindex nav {
+  text-align: right;
+  padding: 0px;
+  background-size: cover;
+}
+#navindex nav ul {
+  list-style-type: none;
+  padding: 20px;
+  margin-left: 500px;
+}
+#navindex nav ul li {
+  display: inline;
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px black solid;
+}
+#navindex nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 1000;
+}
+
+.bgcolor1 {
+  background-color: #333;
+}
+
+.bgstone {
+  background-image: url("IMAGENES/stone.jpg");
+  background-repeat: repeat();
+  background-size: 50px;
+  border-radius: 50px;
+}
+
+.containerchild {
+  flex: 1;
+}
+
+.div1 {
+  width: 70%;
+  margin: 30px;
+  height: auto;
+  position: relative;
+}
+
+.lista-footer li {
+  display: grid;
+  margin: 10px;
+}
+.lista-footer li a {
+  color: black;
+  font-weight: 1000;
+}
+
+.divaside {
+  width: 30%;
+  margin: 30px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.containerimgs {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+}
+
+.asidesdiv {
+  width: 300px;
+  margin: 30px;
+  height: 400px;
+}
+
+.divs4 {
+  width: 300px;
+  margin: 30px;
+  height: 400px;
+  background-color: #333;
+}
+
+.imgsdiv4 {
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+}
+
+.parrafocentrado {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.imgsaside {
+  margin: auto;
+  height: 300px;
+  width: 300px;
+}
+
+.div2 {
+  background-color: #333;
+  padding: 200px;
+  position: relative;
+  top: 250px;
+  left: auto;
+}
+
+.centrado {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.centradojustificado {
+  margin: auto;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconosredes {
+  width: 30px;
+  height: 30px;
+}
+
+@font-face {
+  font-family: Minecraft;
+  src: url(FUENTES/Minecraft.ttf);
+}
+p, h1, h2, h3, h4, a, label {
+  font-family: Minecraft;
+}
+
+.imgsindex {
+  height: 300px;
+  width: 250px;
+  margin: 20px;
+}
+
+.imgsindex2 {
+  height: auto;
+  width: 710px;
+}
+
+.imgsindex3 {
+  height: 250px;
+  width: 150px;
+}
+
+.borde {
+  background-image: url("obsidiana.png");
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.borde div {
+  padding: auto;
+  background-image: url("IMAGENES/stone.jpg");
+}
+
+#mapasatelital {
+  width: 300px;
+  height: 300px;
+}/*# sourceMappingURL=styles.css.map */
