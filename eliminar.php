@@ -1,6 +1,8 @@
 <?php
 
 include("conexion.php");
+
+
 $con=conectar();
 
 $rutdni=$_GET['id'];
