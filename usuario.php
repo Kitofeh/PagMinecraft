@@ -43,11 +43,17 @@
                                 <input type="text" class ="mb-3 form-control" name = "apellidos" placeholder = "apellidos">
                                 <input type="text" class ="mb-3 form-control" name = "rutdni" placeholder = "rutdni">
                                 <input type="text" class ="mb-3 form-control" name = "direccion" placeholder = "direccion">
-                                <input type="text" class ="mb-3 form-control" name = "sexo" placeholder = "sexo">
-                                <input type="text" class ="mb-3 form-control" name = "fechanac" placeholder = "fechanac">
+                                <select class ="mb-3 form-control" id="opciones" name="sexo">
+                                <option value="">...</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                                <option value="Otros">Otros</option>
+                                </select>
+                                <input type="date" class ="mb-3 form-control" name = "fechanac" placeholder = "fechanac">
                                 <input type="number" class ="mb-3 form-control" name = "edad" placeholder = "edad">
                                 <input type="text" class ="mb-3 form-control" name = "usuario" placeholder = "usuario">
-                                <input type="text" class ="mb-3 form-control" name = "email" placeholder = "email">
+                                <input type="email" class ="mb-3 form-control" name = "email" placeholder = "email">
+                                <input type="text" class ="mb-3 form-control" name ="contrasena" placeholder = "contraseña">
 
                                 <input type="submit" class ="btn btn-primary btn-success">
 
@@ -74,6 +80,7 @@
                             <th>Fecha Nac</th>
                             <th>Edad</th>
                             <th>Email</th>
+                            <th>Contraseña</th>
                             
                         </tr>
                     </thead>
@@ -113,6 +120,7 @@
                     echo "<td>" . $row['fechanac'] . "</td>";
                     echo "<td>" . $row['edad'] . "</td>";
                     echo "<td>" . $row['email'] . "</td>";
+                    echo "<td>" . $row['contrasena'] . "</td>";
                     echo "<td><a href='usuario_actualizar.php?id=" . $row['rutdni'] . "' class='btn btn-success'>Modificar</a></td>";
                     echo "<td><button type='button' class='btn btn-danger' data-rutdni='" . $row['rutdni'] . "'>Eliminar</button></td>";
                     echo "</tr>";

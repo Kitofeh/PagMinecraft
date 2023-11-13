@@ -31,11 +31,16 @@ $row=mysqli_fetch_array($query);
                             <input type="text" class ="mb-3 form-control" name = "apellidos" placeholder = "apellidos" value="<?php echo $row['apellidos']?>">
                             <input type="text" class ="mb-3 form-control" name = "rutdni" placeholder = "rutdni" value="<?php echo $row['rutdni']?>">
                             <input type="text" class ="mb-3 form-control" name = "direccion" placeholder = "direccion" value="<?php echo $row['direccion']?>">
-                            <input type="text" class ="mb-3 form-control" name = "sexo" placeholder = "sexo" value="<?php echo $row['sexo']?>">
-                            <input type="text" class ="mb-3 form-control" name = "fechanac" placeholder = "fechanac" value="<?php echo $row['fechanac']?>">
+                            <select class="mb-3 form-control" name="sexo">
+                            <option value="masculino" <?php if($row['sexo'] == 'Masculino') echo 'selected'; ?>>Masculino</option>
+                            <option value="femenino" <?php if($row['sexo'] == 'Femenino') echo 'selected'; ?>>Femenino</option>
+                            <option value="otro" <?php if($row['sexo'] == 'Otros') echo 'selected'; ?>>Otros</option>
+                            </select>
+                            <input type="date" class ="mb-3 form-control" name = "fechanac" placeholder = "fechanac" value="<?php echo $row['fechanac']?>">
                             <input type="number" class ="mb-3 form-control" name = "edad" placeholder = "edad " value="<?php echo $row['edad']?>">
                             <input type="text" class ="mb-3 form-control" name = "usuario" placeholder = "usuario" value="<?php echo $row['usuario']?>">
-                            <input type="text" class ="mb-3 form-control" name = "email" placeholder = "email " value="<?php echo $row['email']?>">
+                            <input type="email" class ="mb-3 form-control" name = "email" placeholder = "email " value="<?php echo $row['email']?>">
+                            <input type="text" class ="mb-3 form-control" name = "contrasena" placeholder = "contraseña " value="<?php echo $row['contrasena']?>">
 
                             <input type="submit" class ="btn btn-primary btn-blocK" value="Actualizar">
             </form>

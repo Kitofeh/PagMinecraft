@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .card__giratorio {
   background-color: transparent;
   width: 0px;
@@ -164,6 +165,11 @@ ul {
     width: 100%;
   }
 }
+.transparent-card {
+  background-color: rgba(255, 255, 255, 0); /* RGBA para incluir la opacidad */
+  border: none; /* Elimina el borde de la carta */
+}
+
 .fnormal {
   font-family: sans-serif;
 }
@@ -206,27 +212,25 @@ body {
   width: 100%;
   background-image: url("IMAGENES/minecraft banner 4k.webp");
 }
+#bannernav ul {
+  list-style-type: none;
+}
+#bannernav ul li {
+  display: inline;
+  text-decoration: none;
+  padding: 10px;
+}
+#bannernav ul li a, #bannernav ul li p {
+  text-decoration: none;
+  color: black;
+  font-weight: 1000;
+  font-size: 15px; /* Ajusta el tamaño de la fuente según tus preferencias */
+}
 
 #titulonav {
   font-size: 100px;
   color: black;
   margin: 50px;
-}
-
-#logonav {
-  margin: auto;
-  width: 200px;
-  height: 75px;
-  position: absolute;
-  left: 35px;
-}
-
-#logonavindex {
-  margin: auto;
-  width: 100px;
-  height: 100px 50px;
-  position: absolute;
-  left: 35px;
 }
 
 #navindex nav {
